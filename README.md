@@ -1,16 +1,18 @@
-# Image Rotation using NVIDIA NPP with CUDA
+# Image Spatial Filtering using NVIDIA NPP with CUDA
 
 ## Overview
 
-This project demonstrates the use of NVIDIA Performance Primitives (NPP) library with CUDA to perform image rotation. The goal is to utilize GPU acceleration to efficiently rotate a given image by a specified angle, leveraging the computational power of modern GPUs. The project is a part of the CUDA at Scale for the Enterprise course and serves as a template for understanding how to implement basic image processing operations using CUDA and NPP.
+This project demonstrates the use of the NVIDIA Performance Primitives (NPP) library with CUDA to perform spatial image filtering. The goal is to utilize GPU acceleration to efficiently apply a filter to a given image, leveraging the computational power of modern GPUs to implement one of the filters provided by the NPP library on the pixels of the image used as input.
+
+This project is a part of the CUDA at Scale for the Enterprise course and was created as a capstone project intended for understanding how to implement spatial image filtering and other processing operations using CUDA and NPP.
 
 ## Code Organization
 
 ```bin/```
-This folder should hold all binary/executable code that is built automatically or manually. Executable code should have use the .exe extension or programming language-specific extension.
+This folder holds all binary/executable code that is built automatically or manually. Executable code should have use the .exe extension or programming language-specific extension.
 
 ```data/```
-This folder should hold all example data in any format. If the original data is rather large or can be brought in via scripts, this can be left blank in the respository, so that it doesn't require major downloads when all that is desired is the code/structure.
+This folder holds all example data in any format, with the input and output data being in their own respective folders. Some sample .pgm files with the respective .png files they were converted from are also provided.
 
 ```lib/```
 Any libraries that are not installed via the Operating System-specific package manager should be placed here, so that it is easier for inclusion/linking.
