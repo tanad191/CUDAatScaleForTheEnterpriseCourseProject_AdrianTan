@@ -18,13 +18,13 @@ This folder holds all example data in any format, with the input and output data
 Any libraries that are not installed via the Operating System-specific package manager should be placed here, so that it is easier for inclusion/linking.
 
 ```src/```
-The source code should be placed here in a hierarchical fashion, as appropriate.
+Contains the source code for the application.
 
 ```README.md```
-This file should hold the description of the project so that anyone cloning or deciding if they want to clone this repository can understand its purpose to help with their decision.
+YOU ARE HERE - This file holds the description of the project so that anyone cloning or deciding if they want to clone this repository can understand its purpose to help with their decision.
 
 ```INSTALL```
-This file should hold the human-readable set of instructions for installing the code so that it can be executed. If possible it should be organized around different operating systems, so that it can be done by as many people as possible with different constraints.
+The human-readable set of instructions for installing the code so that it can be executed.
 
 ```Makefile or CMAkeLists.txt or build.sh```
 There should be some rudimentary scripts for building your project's code in an automatic fashion.
@@ -105,10 +105,17 @@ For this project, running "make run" will not pass any arguments into the execut
 * mkdir -p output
     * Adds the output directory if it doesn't exist.
 * make clean build
-    * Removes the executable and generated output files, then rebuilds the executable (imageSpatialFilterNPP.exe).
+    * Removes the executable, compiled binaries, and generated output files, then rebuilds the executable (imageSpatialFilterNPP.exe). Identical to these lines of bash code:
+```
+* rm -f imageSpatialFilterNPP imageSpatialFilterNPP.o
+* rm -rf ../../bin/x86_64/linux/release/imageSpatialFilterNPP
+* /usr/local/cuda/bin/nvcc -ccbin g++ -I../Common -I../Common/UtilNPP  -m64    --threads 0 -gencode arch=compute_35,code=compute_35 -o imageSpatialFilterNPP.o -c imageSpatialFilterNPP.cpp
+```
 * ./imageSpatialFilterNPP --input="data/$input_filename" --output="output/$output_filename" >> output/output.txt
-    * Runs the program to generate the outputs in the /output folder from the inputs in the /input folder. Replace the $input_filename and $output_filename with the source and target file names, respectively (e.g. with Frieren.pgm and Frieren_spatialFilter.pgm ~~as Himmel would've done~~).
+    * Runs the program to generate the outputs in the /output folder from the inputs in the /data folder. Replace the $input_filename and $output_filename with the source and target file names, respectively (e.g. with Frieren.pgm and Frieren_spatialFilter.pgm ~~as Himmel would've done~~).
     * If no arguments are provided, the program will use the default input and output files, Lena.pgm and Lena_spatialFilter.pgm respectively, and place them both in the same folder, where the input file is located.
+
+Building the program using the second step is identical to 
 
 - Cleaning Up
 To clean up the compiled binaries and other generated files, run:

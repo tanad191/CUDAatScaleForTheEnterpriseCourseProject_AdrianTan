@@ -1,0 +1,12 @@
+This code was run on Coursera's Visual Studio lab engine using C++ and CUDA. In order to run it, you need to take all the code provided by this application and install it on the lab workspace. The code can be cloned or downloaded from the following GitHub repository:
+
+https://github.com/tanad191/CUDAatScaleForTheEnterpriseCourseProject_AdrianTan
+
+Once the files are downloaded and unzipped, the directory must be selected as a whole including all content inside, before being dragged and dropped into the lab space under the "PROJECT" directory in the Explorer tab. This code is meant to be run independently of other applications, although additional filepaths may need to be included to avoid compilation errors from occurring that could prevent the creation of the executable depending on the location of the requisite helper libraries.
+
+For this project, installation requires cloning the code from the GitHub repository above, then placing it in a repository of your choice before building and executing the application. Note that running "make run" will not pass any arguments into the executable, so instead, each command will have to be run individually on the terminal. The following commands must be run sequentially:
+
+* cd {$project_directory/CUDAatScaleForTheEnterpriseCourseProject_AdrianTan}: Navigates the terminal to the directory for the project. $project_directory stands for the directory where the folder with the cloned files is located.
+* mkdir -p output: Adds the output directory if it doesn't exist.
+* make clean build: Removes the executable, compiled binaries, and generated output files, then rebuilds the executable (imageSpatialFilterNPP.exe).
+* ./imageSpatialFilterNPP --input="data/$input_filename" --output="output/$output_filename" >> output/output.txt: Runs the program to generate the outputs in the /output folder from the inputs in the /data folder. If no arguments are provided, the program will use the default input and output files, Lena.pgm and Lena_spatialFilter.pgm respectively, and place them both in the same folder, where the input file is located.
