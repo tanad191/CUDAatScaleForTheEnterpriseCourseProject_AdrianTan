@@ -12,7 +12,7 @@ This project is a part of the CUDA at Scale for the Enterprise course and was cr
 This folder holds all binary/executable code that is built automatically or manually. Executable code should have use the .exe extension or programming language-specific extension.
 
 ```data/```
-This folder holds all example data in any format, with the input and output data being in their own respective folders. Some sample .pgm files with the respective .png files they were converted from are also provided.
+This folder holds all example data in any format, with the input and output data being in their own respective folders. Some sample .pgm files with the respective ~~anime waifu screencaps~~ .png files they were converted from are also provided.
 
 ```lib/```
 Any libraries that are not installed via the Operating System-specific package manager should be placed here, so that it is easier for inclusion/linking.
@@ -97,21 +97,18 @@ The samples makefiles can take advantage of certain options:
 
 
 ## Running the Program
-After building the project, you can run the program using the following command:
 
-```bash
-Copy code
-make run
-```
+### On Coursera's terminal:
 
-This command will execute the compiled binary, rotating the input image (Lena.png) by 45 degrees, and save the result as Lena_rotated.png in the data/ directory.
+For this project, running "make run" will not pass any arguments into the executable, so instead, each command will have to be run individually on the terminal. The following commands must be run sequentially:
 
-If you wish to run the binary directly with custom input/output files, you can use:
-
-```bash
-- Copy code
-./bin/imageRotationNPP --input data/Lena.png --output data/Lena_rotated.png
-```
+* mkdir -p output
+    * Adds the output directory if it doesn't exist.
+* make clean build
+    * Removes the executable and generated output files, then rebuilds the executable (imageSpatialFilterNPP.exe).
+* ./imageSpatialFilterNPP --input="data/$input_filename" --output="output/$output_filename" >> output/output.txt
+    * Runs the program to generate the outputs in the /output folder from the inputs in the /input folder. Replace the $input_filename and $output_filename with the source and target file names, respectively (e.g. with Frieren.pgm and Frieren_spatialFilter.pgm ~~as Himmel would've done~~).
+    * If no arguments are provided, the program will use the default input and output files, Lena.pgm and Lena_spatialFilter.pgm respectively, and place them both in the same folder, where the input file is located.
 
 - Cleaning Up
 To clean up the compiled binaries and other generated files, run:

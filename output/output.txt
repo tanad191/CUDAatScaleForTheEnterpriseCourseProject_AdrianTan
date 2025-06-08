@@ -1,0 +1,72 @@
+./imageSpatialFilterNPP Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 11.3.3
+  CUDA Driver  Version: 12.6
+  CUDA Runtime Version: 11.3
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+imageSpatialFilterNPP opened: <data/Frieren.pgm> successfully!
+DEBUG: checkCmdLineFlag is TRUE
+DEBUG: Will save image to: output/Frieren_spatialFilter.pgm
+Saved image: output/Frieren_spatialFilter.pgm
+./imageSpatialFilterNPP Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 11.3.3
+  CUDA Driver  Version: 12.6
+  CUDA Runtime Version: 11.3
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+imageSpatialFilterNPP opened: <data/Frieren.pgm> successfully!
+DEBUG: checkCmdLineFlag is TRUE
+DEBUG: Will save image to: output/Frieren_spatialFilter.pgm
+Saved image: output/Frieren_spatialFilter.pgm
+./imageSpatialFilterNPP Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 11.3.3
+  CUDA Driver  Version: 12.6
+  CUDA Runtime Version: 11.3
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+imageSpatialFilterNPP opened: <data/MarcilleDonato.pgm> successfully!
+DEBUG: checkCmdLineFlag is TRUE
+DEBUG: Will save image to: output/MarcilleDonato_spatialFilter.pgm
+Saved image: output/MarcilleDonato_spatialFilter.pgm
+./imageSpatialFilterNPP Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 11.3.3
+  CUDA Driver  Version: 12.6
+  CUDA Runtime Version: 11.3
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+imageSpatialFilterNPP opened: <data/NobaraKugisaki.pgm> successfully!
+DEBUG: checkCmdLineFlag is TRUE
+DEBUG: Will save image to: output/NobaraKugisaki_spatialFilter.pgm
+Saved image: output/NobaraKugisaki_spatialFilter.pgm
+./imageSpatialFilterNPP Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 11.3.3
+  CUDA Driver  Version: 12.6
+  CUDA Runtime Version: 11.3
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+imageSpatialFilterNPP opened: <data/ShinobuKocho.pgm> successfully!
+DEBUG: checkCmdLineFlag is TRUE
+DEBUG: Will save image to: output/ShinobuKocho_spatialFilter.pgm
+Saved image: output/ShinobuKocho_spatialFilter.pgm
+./imageSpatialFilterNPP Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 11.3.3
+  CUDA Driver  Version: 12.6
+  CUDA Runtime Version: 11.3
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+imageSpatialFilterNPP opened: <data/YorForger.pgm> successfully!
+DEBUG: checkCmdLineFlag is TRUE
+DEBUG: Will save image to: output/YorForger_spatialFilter.pgm
+Saved image: output/YorForger_spatialFilter.pgm
